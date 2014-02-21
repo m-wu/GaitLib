@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Switch
+        android:id="@+id/soundSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Sound" />
+
+    <TextView
+        android:id="@+id/cadenceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/soundSwitch"
+        android:text="Cadence (Hz)" />
+
+    <TextView
+        android:id="@+id/cadenceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cadenceLabel"
+        android:layout_toLeftOf="@+id/soundSwitch"
+        android:freezesText="true"
+        android:gravity="right"
+        android:hint="0.0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/gaitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cadenceTextView"
+        android:text="Gait" />
+
+    <TextView
+        android:id="@+id/gaitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gaitLabel"
+        android:hint="walksideways"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50sp" />
+
+    <ListView
+        android:id="@+id/gaitListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gaitTextView" >
+
+    </ListView>
+
+    <Switch
+        android:id="@+id/gaitClassificationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/soundSwitch"
+        android:text="Gait" />
+
+</RelativeLayout>
