@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5" >
+	        
+            <RadioButton
+	            android:id="@+id/radAccel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/radAccel" />
+            
+            <RadioButton
+	            android:id="@+id/radGyro"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/radGyro" />
+
+       	 	<RadioButton
+	            android:id="@+id/radBoth"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right"
+	            android:text="@string/radBoth" />
+      	 	
+   	 	</LinearLayout>
+	       	 	
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtStatus_NotLogging"
+        android:textColor="@color/txtStatus_NotLoggingColour"
+        android:textSize="24pt" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5" >
+
+        <Button
+            android:id="@+id/btnSetOffset"
+            android:layout_width="152dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:text="@string/btnOffset_text" />
+
+        <TextView
+            android:id="@+id/txtOffset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtParticipantID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtParticipantID"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spnParticipantID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/ParticipantIDs" />
+
+    <TextView
+        android:id="@+id/txtPhoneID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtPhoneID"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spnPhoneID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/PhoneID" />
+
+    <TextView
+        android:id="@+id/txtLocationOnPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtLocationOnPerson"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spnLocationOnPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/LocationsOnPerson" />
+
+    <Button
+        android:id="@+id/btnLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:text="@string/btnLogText" />
+
+</LinearLayout>

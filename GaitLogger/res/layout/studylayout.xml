@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtParticipantID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtParticipantID"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spnParticipantID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/ParticipantIDs" />
+
+    <Button
+        android:id="@+id/btnStartStudy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/btnStartStudyText" />
+
+    <TextView
+        android:id="@+id/txtPhoneID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtPhoneID"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spnPhoneID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/PhoneID" />
+
+    <Button
+        android:id="@+id/btnSetPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSetPhoneText" />
+
+    <TextView
+        android:id="@+id/txtGait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtGait"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnShuffleGait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btnShuffleText" />
+
+    <Spinner
+        android:id="@+id/spnGait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Gaits" />
+
+    <Button
+        android:id="@+id/btnStartTrial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="@string/btnStartTrialText" />
+
+    <Button
+        android:id="@+id/btnStopTrial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="@string/btnStopTrialText" />
+
+</LinearLayout>

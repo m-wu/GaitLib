@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.4'
+    }
+}
+apply plugin: 'android'
+
+dependencies {
+    compile project(':C::Users:Mike:Documents:UBC:SPIN:gaitlib-workspace:ubccsgit:GaitLib')
+    compile files('../../../../../../../../GaitLib/libs/commons-math3-3.0.jar')
+    compile files('../../../../../../../../GaitLib/libs/wekaSTRIPPED.jar')
+}
+
+android {
+    compileSdkVersion 15
+    buildToolsVersion "15"
+
+    defaultConfig {
+        minSdkVersion 10
+        targetSdkVersion 14
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        instrumentTest.setRoot('tests')
+    }
+}

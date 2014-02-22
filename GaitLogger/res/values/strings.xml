@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GaitLogger</string>
+    <string name="btnLogText">Log</string>
+    <string name="btnLogStopLogging">Stop</string>
+    <string name="txtStatus_Logging">Logging</string>
+    <string name="txtStatus_NotLogging">Not Logging</string>
+    <string name="SharedPreferencesName">GaitLoggerSharedPreferences</string>
+    <string name="accel_logfile_name">accel</string>
+
+    <string-array name="LocationsOnPerson">
+        <item>frontpocket</item>
+        <item>backpocket</item>
+        <item>belt</item>
+        <item>arm</item>
+        <item>hand</item>
+        <item>purse</item>
+        <item>backpack</item>
+        <item>messengerbag</item>
+        <item>otherbag</item>
+    </string-array>
+    <string-array name="PhoneID">
+        <item>GN1</item>
+        <item>GN2</item>
+        <item>GN3</item>
+        <item>GN4</item>
+        <item>GN5</item>
+        <item>GN6</item>
+        <item>GN7</item>
+        <item>GN8</item>
+    </string-array>
+
+    <color name="txtStatus_LoggingColour">#00FF00</color>
+    <color name="txtStatus_NotLoggingColour">#FF0000</color>
+
+    <string name="txtParticipantID">Participant ID:</string>
+    <string name="txtPhoneID">Phone ID:</string>
+    <string name="txtLocationOnPerson">Location on Person:</string>
+
+    <string-array name="ParticipantIDs">
+        <item>Test</item>
+        <item>Pilot1</item>
+        <item>Pilot2</item>
+        <item>Pilot3</item>
+        <item>Pilot4</item>
+        <item>Pilot5</item>
+        <item>Pilot6</item>
+        <item>Pilot7</item>
+        <item>Pilot8</item>
+        <item>Pilot9</item>
+        <item>Pilot10</item>
+        <item>Participant1</item>
+        <item>Participant2</item>
+        <item>Participant3</item>
+        <item>Participant4</item>
+        <item>Participant5</item>
+        <item>Participant6</item>
+        <item>Participant7</item>
+        <item>Participant8</item>
+        <item>Participant9</item>
+        <item>Participant10</item>
+        <item>Participant11</item>
+        <item>Participant12</item>
+        <item>Participant13</item>
+        <item>Participant14</item>
+        <item>Participant15</item>
+        <item>Participant16</item>
+        <item>Participant17</item>
+        <item>Participant18</item>
+        <item>Participant19</item>
+        <item>Participant20</item>
+        <item>Participant21</item>
+        <item>Participant22</item>
+        <item>Participant23</item>
+        <item>Participant24</item>
+        <item>Participant25</item>
+        <item>Participant26</item>
+        <item>Participant27</item>
+        <item>Participant28</item>
+        <item>Participant29</item>
+        <item>Participant30</item>
+    </string-array>
+
+    <string name="btnOffset_text">Synchronize Timestamps</string>
+    <string name="txtGait">Gait:</string>
+
+    <string-array name="Gaits">
+        <item>walk</item>
+        <item>fastwalk</item>
+        <item>jog</item>
+        <item>run</item>
+        <item>walkbackwards</item>
+        <item>ascendstairs</item>
+        <item>descendstairs</item>
+        <item>toes</item>
+        <item>heels</item>
+        <item>kickingbum</item>
+        <item>liftknees</item>
+        <item>walksideways</item>
+        <item>penguin</item>
+        <item>twofoothop</item>
+        <item>narrow</item>
+    </string-array>
+
+    <string name="LaunchStudyText">Run Study</string>
+    <string name="LaunchLoggerText">Log</string>
+    <string name="btnStartStudyText">Start Study</string>
+    <string name="btnSetPhoneText">Synchronize Timestamps</string>
+    <string name="btnStartTrialText">Start Trial</string>
+    <string name="btnStopTrialText">Stop Trial</string>
+    <string name="study_logfile_name">study</string>
+    <string name="gyro_logfile_name">gyro</string>
+    <string name="btnShuffleText">Shuffle Gait Order</string>
+    <string name="radAccel">Accel</string>
+    <string name="radGyro">Gyro</string>
+    <string name="radBoth">Both</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_feature_extraction">FeatureExtractionActivity</string>
+    <string name="LaunchFeatureExtractionText">Perform Feature Extraction</string>
+    <string name="PerformFeatureExtractionText">PerformFeatureExtraction</string>
+    <string name="folder_selector_prompt">Select folder</string>
+    <string name="CancelFeatureExtractionText">Cancel Feature Extraction</string>
+    <string name="ServiceStoppedText">Service stopped.</string>
+
+</resources>
